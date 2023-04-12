@@ -1,10 +1,13 @@
-print("\033[1;33;40m wellcome")
-nama = input ("masukkan nama ")
-print("Halo, ", nama)
-input("Apa kabarmu hari ini? ", )
-print("===============  Wellcome To My Program =============")
-print("================------Iqo Market-------==============")
-input("Mau pesan apa? ")
+import getpass
+user = input("masukkan username: ")
+kata_sandi = getpass.getpass()
+if kata_sandi == '030604' and user == 'Lucydermon':
+    print("\033[1;33;40m====================----------- Anda telah login ----------===================")
+    print("\033[1;33;40m====================---- Selamat datang di Program saya ----==================")
+    print("\033[1;33;40mHalo "+user)
+else:
+    print("\033[1;33;40m Password atau username salah")
+    print("\033[1;33;40m Harap Coba Lagi")
 bacil_price = 5000
 money = 100000
 input_count = input('Mau berapa bungkus? ')
